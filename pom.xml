@@ -19,6 +19,20 @@
 	</properties>
 
 	<dependencies>
+	<dependency> 
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		
+<!-- 		dependencia do spring security. todas as funcionalibilidades da biblioteca passam a funcionar -->
+
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+		</dependency>
+		
+<!-- 		essa biblioteca serve pra codificar o código que ele cadastra,criptografa a senha dentro do banco de dados -->
+	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>

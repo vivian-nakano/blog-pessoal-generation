@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "45f96470-d9be-48a0-8ddb-61126db13034",
+		"name": "blog-pessoal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DEL_POSTAGENS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\":\"Aula de API Rest\",\r\n    \"texto\":\"Estamos Aprendendo Muito na Gen\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/postagens/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagens",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_SENHA_SECURITY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Vivian Rodrigues\",\r\n    \"usuario\":\"vivian\",\r\n    \"senha\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios/cadastrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_POSTAGENS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/postagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_TOKEN_SECURITY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\":\"vivian\",\r\n    \"senha\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios/logar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"logar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_AUTHORIZATION_CHAVE",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dml2aWFuOjEyMzQ1Ng==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/postagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_CHAVE_SEM_AUTORIZAÇÃO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/postagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagens"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
