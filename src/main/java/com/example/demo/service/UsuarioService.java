@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import java.nio.charset.Charset;
+import java.nio.charset.Charset; 
 import java.util.Optional;
 
 import org.apache.commons.codec.binary.Base64;
@@ -12,7 +12,7 @@ import com.example.demo.model.UserLogin;
 import com.example.demo.model.Usuario;
 import com.example.demo.repository.UsuarioRepository;
 
-@Service
+@Service ///dita regra de negócio
 public class UsuarioService {
 
 	@Autowired

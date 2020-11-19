@@ -1,6 +1,6 @@
 package com.example.demo.model;
 
-
+//classe driver, veicular : apenas mostra
 public class UserLogin {
 	
 	private String nome;
