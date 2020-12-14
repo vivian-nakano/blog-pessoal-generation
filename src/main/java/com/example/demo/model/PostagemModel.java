@@ -83,6 +83,7 @@ public class PostagemModel {
 	// tabela com nome postagem, com colunas de titulo, texto, date...
 	// id autoincrement
 
+	
 	public int getAno() {
 		return ano;
 	}
